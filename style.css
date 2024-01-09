@@ -20,7 +20,7 @@ body {
 
 
 .container {
-	max-width: 600px;
+	width: auto;
 	margin: 0 auto;
 	background-color: #fff;
 	padding: 40px;
@@ -31,6 +31,7 @@ body {
 h1 {
 	margin-bottom: 40px;
 	color: #333;
+	font-size: 30px;
 }
 
 label {
@@ -54,6 +55,7 @@ button {
 }
 
 button {
+	margin-top: 15px;
 	background-color: #3498db;
 	color: white;
 	border: none;
@@ -90,13 +92,20 @@ button:hover {
   }
 
 
-  @media only screen and (max-width: 768px) {
-	h1{
-		text-align: left;
-		font-size: 35px;
+  @media only screen and (max-width: 600px) {
+	body {
+		height: 93vh;
 	}
 
-	.container {
-		padding: 30px;
+	h1 {
+		text-align: left;
+	  font-size: 40px; /* Ubah ukuran judul agar sesuai dengan layar yang lebih kecil */
 	}
+  
+	.container {
+	  padding: 20px; /* Mengurangi padding agar konten lebih sesuai */
+	}
+  
+
   }
+  
